@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.glleung.parkinggarageautomation.create_reservation">
+
+    <TextView android:id="@+id/new_reservation"
+        android:text="@string/new_reservation_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"/>
+    <ImageView android:id="@+id/reserved_pic"
+        android:src="@drawable/reserved"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/new_reservation"/>
+
+    <TextView android:id="@+id/vehicle_reservation"
+        android:text="@string/vehicle_reservation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:layout_below="@id/reserved_pic"/>
+    <Button android:id="@+id/select_vehicle"
+        android:text="@string/select_vehicle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/vehicle_reservation"/>
+    <TextView android:id="@+id/start_reservation_prompt"
+        android:text="@string/start_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:layout_below="@id/select_vehicle"/>
+    <Button android:id="@+id/start_date"
+        android:text="@string/start_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/start_reservation_prompt"/>
+    <TextView android:id="@+id/end_reservation_prompt"
+        android:text="@string/start_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:layout_below="@id/start_date"/>
+    <Button android:id="@+id/end_date"
+        android:text="@string/end_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/end_reservation_prompt"/>
+
+    <Button android:id="@+id/next"
+        android:text="@string/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/end_date"/>
+
+
+
+</RelativeLayout>

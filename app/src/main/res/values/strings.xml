@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Parking Garage Automation</string>
+    <string name="logout">Logout</string>
+    <!-- LOGIN SCREEN-->
+    <string name="login_welcome">Welcome!</string>
+    <string name="welcome_prompt">Please log in or create an account to continue.</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
+    <string name="new_user">New User</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- MAIN SCREEN -->
+    <string name="title_activity_main_screen">Parking Garage Automation</string>
+    <string name="main_welcome">Welcome, User</string>
+    <string name="view">View your information</string>
+    <string name="view_reservations">View reservations ></string>
+    <string name="view_vehicles">View registered vehicles ></string>
+    <string name="manage">Manage your account</string>
+
+    <string name="edit_account">Edit account information ></string>
+    <string name="create_reservation">Create a reservation ></string>
+    <string name="register_vehicle">Register a new vehicle ></string>
+
+    <!-- NEW USER-->
+    <string name="title_activity_new_user">New User</string>
+    <string name="new_user_welcome">Create a New Account</string>
+    <string name="first_name">first name</string>
+    <string name="last_name">last name</string>
+    <string name="phone">phone number</string>
+    <string name="email">email address</string>
+    <string name="payment">Select a form of payment:</string>
+    <string name="credit">Credit Card</string>
+    <string name="paypal">Paypal</string>
+    <string name="venmo">Venmo</string>
+    <string name="next">Next</string>
+
+
+    <string name="hello_world">Hello world!</string>
+
+    <!-- REGISTER VEHICLE-->
+    <string name="title_activity_register_vehicle">Register a Vehicle</string>
+    <string name="new_vehicle_welcome">New vehicle registration</string>
+    <string name="new_vehicle_prompt">Please enter the following information about your vehicle:</string>
+    <string name="make">make</string>
+    <string name="model">model</string>
+    <string name="year">year</string>
+    <string name="license">license plate</string>
+    <string name="rental">If your vehicle is a rental, please select a rental end date:</string>
+    <string name="select_date">select end date</string>
+
+    <!-- CREATE RESERVATION-->
+    <string name="title_activity_create_reservation">Create a Reservation</string>
+    <string name="new_reservation_welcome">New Reservation</string>
+    <string name="vehicle_reservation">Please select a vehicle to register:</string>
+    <string name="select_vehicle">select vehicle</string>
+    <string name="start_prompt">Please select a start date:</string>
+    <string name="start_date">start date</string>
+    <string name="end_prompt">Please select an end date:</string>
+    <string name="end_date">end date</string>
+    <string name="submit">Submit</string>
+</resources>

@@ -1,0 +1,83 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.glleung.parkinggarageautomation.register_vehicle">
+
+        <TextView android:id="@+id/new_vehicle_welcome"
+            android:text="@string/new_vehicle_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp"/>
+        <ImageView android:id="@+id/car_pic"
+            android:src="@drawable/car"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/new_vehicle_welcome"/>
+        <TextView android:id="@+id/new_vehicle_prompt"
+            android:text="@string/new_vehicle_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"
+            android:layout_below="@id/car_pic"/>
+
+
+        <EditText  android:id="@+id/vehicle_make"
+            android:hint="@string/make"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/new_vehicle_prompt"/>
+        <EditText  android:id="@+id/vehicle_model"
+            android:hint="@string/model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vehicle_make"/>
+        <EditText  android:id="@+id/vehicle_year"
+            android:hint="@string/year"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vehicle_model"/>
+        <EditText  android:id="@+id/vehicle_license"
+            android:hint="@string/license"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vehicle_year"/>
+
+        <TextView android:id="@+id/rental_prompt"
+            android:text="@string/rental"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"
+            android:layout_below="@id/vehicle_license"/>
+
+        <Button android:id="@+id/select_date"
+            android:text="@string/select_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/rental_prompt"/>
+            <!--android:onClick="showDatePickerDialog"-->
+
+        <Button android:id="@+id/vehicle_next"
+            android:text="@string/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/select_date"/>
+
+    </RelativeLayout>
+</ScrollView>
