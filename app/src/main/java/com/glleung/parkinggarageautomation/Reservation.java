@@ -25,18 +25,18 @@ public class Reservation {
     }
 
     public int getArrivalTime() {
-        return firstName;
+        return arrivalTime;
     }
     public int getDepartureTime() {
-        return lastName;
+        return departureTime;
     }
 
     public int getGarageLevel() {
-        return email;
+        return garageLevel;
     }
 
     public String getParkingSpot() {
-        return phone;
+        return parkingSpot;
     }
 
     public User getUser() {

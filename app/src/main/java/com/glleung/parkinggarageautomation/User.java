@@ -9,6 +9,7 @@ public class User {
         private String email;
         private String phone;
         private String password;
+        private Car car;
 
         public User() {}
 
@@ -41,6 +42,10 @@ public class User {
 
         public String getPassword() {
             return password;
+        }
+
+        public Car getCar(){
+            return car;
         }
 }//end User
 
