@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Parking Garage Automation</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/navbar2.css">
+	
+	<!--Javascript Files-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>		
+
+</head>
+
+<body>
+	<div id="wrapper">
+	
+	<!--Navbar begins-->
+	<div id="navbar-wrapper">
+		<ul class="navbar-nav">
+		<li><a href="portal.html">Home<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+		<li class="active"><a href="manage.html">Account Management<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-cog"></span></a></li>
+		<li class="active"><a href="register.html">Register a Vehicle<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-record"></span></a></li>
+        <li ><a href="reservation.html">Make a Reservation<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-saved"></span></a></li>        
+        <li ><a href="login.html">Log Out<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-log-out"></span></a></li>
+		</ul>	
+	</div>
+	
+	<!--Page content-->
+	<div id="page-content-wrapper">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-6">
+					<h2>Manage Account Info</h2> 
+					To save changes to your account information, edit the info below and click "Submit." 
+					<div class="form-group">
+					  <label for="usr">First Name:</label>
+					  <input type="text" class="form-control" id="usr" style="width: 300px" placeholder="Example">
+					</div>
+					
+					<div class="form-group">
+					  <label for="usr">Last Name:</label>
+					  <input type="text" class="form-control" id="usr" style="width: 300px" placeholder="Example_last">
+					</div>
+					
+					<div class="form-group">
+					  <label for="pwd">Password:</label>
+					  
+					  <input type="password" class="form-control" id="pwd" style="width: 300px" placeholder="password123">
+					</div>
+					
+					<div class="form-group">
+					  <label for="usr">Phone Number:</label>
+					  <input type="text" class="form-control" id="pwd" style="width: 300px" placeholder="201-320-0112">
+					</div>	
+
+					<div class="form-group">
+					  <label for="usr">Email:</label>
+					  <input type="text" class="form-control" id="pwd" style="width: 300px" placeholder="example@test.com">
+					</div>			
+
+					
+				</div>
+				<div class="col-lg-6">	
+					<hr></hr>
+					<hr></hr>
+					<h3>Payment Information</h3>
+					<p>
+					<b>Method: </b>
+					
+					<div class="btn-group">
+					  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Choose Method <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu">
+						<li class="active"><a href="#">Credit/Debit Card</a></li>
+						<li><a href="#">Venmo</a></li>
+						<li><a href="#">Paypal</a></li>
+					  </ul>
+					</div>			
+					<p>
+					<p>Credit Card was selected.
+					<p>
+					<div class="form-group">
+					  <label for="usr">Credit Card Number:</label>
+					  <input type="text" class="form-control" id="pwd" style="width: 300px" placeholder="2345678901234">
+					</div>	
+					
+					<div class="form-group">
+					  <label for="usr">CVV:</label>
+					  <input type="text" class="form-control" id="pwd" style="width: 100px" placeholder="320">
+					</div>	
+					
+					<p>Expiration Date
+					<div class="btn-group">
+					  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Select Month <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu">
+						<li><a href="#">Jan</a></li>
+						<li><a href="#">Feb</a></li>
+						<li class="active"><a href="#">Mar</a></li>
+						<li><a href="#">Apr</a></li>
+						<li><a href="#">May</a></li>
+						<li><a href="#">June</a></li>
+						<li><a href="#">July</a></li>
+						<li><a href="#">Aug</a></li>
+						<li><a href="#">Sept</a></li>
+						<li><a href="#">Oct</a></li>
+						<li><a href="#">Nov</a></li>
+						<li><a href="#">Dec</a></li>						
+					  </ul>
+					</div>						
+					<div class="btn-group">
+					  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Select Year<span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu">
+						<li class="active"><a href="#">2016</a></li>
+						<li><a href="#">2017</a></li>
+						<li><a href="#">2018</a></li>
+					  </ul>
+					</div>					
+					
+					
+					
+					<p><p>
+					<button type="button" class="btn btn-primary">Submit</button>
+				</div>	
+							
+			</div>		
+		</div>
+	</div>
+	
+	
+	</div> <!-- end of "wrapper"-->
+		
+	
+</body>
+</html>
