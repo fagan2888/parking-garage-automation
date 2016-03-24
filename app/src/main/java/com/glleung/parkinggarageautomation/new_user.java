@@ -45,7 +45,7 @@ public class new_user extends ActionBarActivity {
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final String currentEmail = email.getText().toString();
+                final String currentEmail = email.getText().toString().toLowerCase();
                 myFirebaseRef.createUser(
                         currentEmail,
                         "defaultpass",

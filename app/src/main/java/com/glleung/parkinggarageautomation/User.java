@@ -9,7 +9,7 @@ public class User {
         private String email;
         private String phone;
         private String password;
-        private Car car;
+        private Vehicle vehicle;
 
         public User() {}
 
@@ -44,8 +44,8 @@ public class User {
             return password;
         }
 
-        public Car getCar(){
-            return car;
+        public Vehicle getCar(){
+            return vehicle;
         }
 }//end User
 

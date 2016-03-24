@@ -17,7 +17,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-public class new_user extends ActionBarActivity {
+public class create_reservation extends ActionBarActivity {
 
     //if (currentUser())
     EditText entryTime;
@@ -32,11 +32,11 @@ public class new_user extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_new_user);
+        setContentView(R.layout.activity_create_reservation);
 
         nextButton = (Button) findViewById(R.id.next);
-        entryTime = (EditText) findViewById(R.id.entry_time);
-        exitTime = (EditText) findViewById(R.id.exit_time);
+       // entryTime = (EditText) findViewById(R.id.entry_time);
+       // exitTime = (EditText) findViewById(R.id.exit_time);
         rg = (RadioGroup) findViewById(R.id.payment_options);
 
         myFirebaseRef = new Firebase("https://incandescent-fire-3535.firebaseio.com/");
@@ -44,7 +44,7 @@ public class new_user extends ActionBarActivity {
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final String currentEmail = email.getText().toString();
+                final String currentEmail = "";//email.getText().toString();
                 myFirebaseRef.createUser(
                         currentEmail,
                         "defaultpass",
@@ -60,9 +60,9 @@ public class new_user extends ActionBarActivity {
                                 map.put("entryTime", entryTime.getText().toString());
                                 map.put("exitTime", exitTime.getText().toString());
                                 map.put("paymentform", paymentSelected);
-                                map.put("userid",currentuser().userid.getText().toString());
-                                map.put("email", currentuser().email.getText().toString());
-                                map.put("phonenumber", currentuser().phone.getText().toString());
+                    //            map.put("userid",currentuser().userid.getText().toString());
+                     //           map.put("email", currentuser().email.getText().toString());
+                    //            map.put("phonenumber", currentuser().phone.getText().toString());
                                 adminRef.setValue(map);
                             }
 
@@ -76,23 +76,6 @@ public class new_user extends ActionBarActivity {
             }
         });
 
-        rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                switch (checkedId) {
-                    case 0:
-                        paymentSelected = "Credit Card";
-                        break;
-                    case 1:
-                        paymentSelected = "Venmo";
-                        break;
-                    case 2:
-                        paymentSelected = "Paypal";
-                        break;
-                    default:
-                        break;
-                }
-            }
-        });
     }
 
     @Override
