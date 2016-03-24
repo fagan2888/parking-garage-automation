@@ -7,20 +7,19 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 
 public class main extends ActionBarActivity {
+
+    final int VENMO_REQUEST = 10;  // The request code
+    final String appId = "3417";
+    final String appName = "Parking Automation";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
 
         Button new_reservation = (Button)findViewById(R.id.create_reservations);
         new_reservation.setOnClickListener(new View.OnClickListener() {
@@ -38,6 +37,26 @@ public class main extends ActionBarActivity {
             }
         });
 
+        Button payment_button = (Button) findViewById(R.id.make_payment);
+        payment_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!VenmoLibrary.isVenmoInstalled(main.this)){
+                    Toast.makeText(main.this,"Venmo is not installed",Toast.LENGTH_LONG).show();
+                }
+                else{
+                    Toast.makeText(main.this,"Venmo is installed",Toast.LENGTH_LONG).show();
+                    Intent venmoIntent = VenmoLibrary.openVenmoPayment(appId, appName, "9084006666", "0.01", "Parking", "pay");
+                    startActivityForResult(venmoIntent, VENMO_REQUEST);
+                }
+            }
+        });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
