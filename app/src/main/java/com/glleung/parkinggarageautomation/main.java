@@ -45,7 +45,8 @@ public class main extends ActionBarActivity {
                     Toast.makeText(main.this,"Venmo is not installed",Toast.LENGTH_LONG).show();
                 }
                 else{
-                    Intent venmoIntent = VenmoLibrary.openVenmoPayment(appId, appName, "8482189181", "1.00", "Parking", "pay");
+                    Toast.makeText(main.this,"Venmo is installed",Toast.LENGTH_LONG).show();
+                    Intent venmoIntent = VenmoLibrary.openVenmoPayment(appId, appName, "9084006666", "0.01", "Parking", "pay");
                     startActivityForResult(venmoIntent, VENMO_REQUEST);
                 }
             }
