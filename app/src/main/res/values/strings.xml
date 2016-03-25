@@ -59,4 +59,6 @@
     <string name="end_prompt">Please select an end date:</string>
     <string name="end_date">end date</string>
     <string name="submit">Submit</string>
+
+    <string name="title_activity_create_reservation_time">Create a Reservation</string>
 </resources>
