@@ -55,14 +55,16 @@ public class new_user extends ActionBarActivity {
                                 // user was created
                                 String uid = (String) result.get("uid");
                                 Toast.makeText(getApplicationContext(), "Pass - "+ uid, Toast.LENGTH_LONG).show();
+                                double bal = 0.00;
 
                                 Firebase ref = new Firebase("https://incandescent-fire-3535.firebaseio.com/users/"+uid);
-                                Map<String,String> map = new HashMap<String, String>();
+                                Map<String,Object> map = new HashMap<String, Object>();
                                 map.put("email",currentEmail);
                                 map.put("firstname",firstName.getText().toString());
                                 map.put("lastname",lastName.getText().toString());
                                 map.put("paymentform",paymentSelected);
                                 map.put("phonenumber",phone.getText().toString());
+                                map.put("balance",bal);
                                 ref.setValue(map);
                             }
 

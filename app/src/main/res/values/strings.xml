@@ -61,4 +61,5 @@
     <string name="submit">Submit</string>
 
     <string name="title_activity_create_reservation_time">Create a Reservation</string>
+    <string name="title_activity_registered_vehicles">RegisteredVehicles</string>
 </resources>
