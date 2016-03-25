@@ -35,6 +35,10 @@
             android:name=".create_reservation"
             android:label="@string/title_activity_create_reservation" >
         </activity>
+        <activity
+            android:name=".create_reservation_time"
+            android:label="@string/title_activity_create_reservation_time" >
+        </activity>
     </application>
 
 </manifest>
