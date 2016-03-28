@@ -49,9 +49,17 @@ public class main extends ActionBarActivity {
         firebaseRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                double balance = (double) dataSnapshot.child("balance").getValue();
-                main.latestBalance = balance;
-                balanceView.setText("Balance: $" + balance);
+                try {
+                    double balance = (double) dataSnapshot.child("balance").getValue();
+                    main.latestBalance = balance;
+                    balanceView.setText("Balance: $" + balance);
+                }
+                catch (Exception e){
+                    //no balance will display
+                    double balance = 0.00;
+                    main.latestBalance = balance;
+                    balanceView.setText("Balance: $" + balance);
+                }
 
                 String name = (String) dataSnapshot.child("firstname").getValue();
                 TextView welcomeView = (TextView) findViewById(R.id.main_welcome);

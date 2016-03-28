@@ -20,23 +20,24 @@
         </activity>
         <activity
             android:name=".main"
-            android:label="@string/title_activity_main_screen"></activity>
+            android:label="@string/title_activity_main_screen" />
         <activity
             android:name=".new_user"
-            android:label="@string/title_activity_new_user"></activity>
+            android:label="@string/title_activity_new_user" />
         <activity
             android:name=".register_vehicle"
-            android:label="@string/title_activity_register_vehicle"></activity>
+            android:label="@string/title_activity_register_vehicle" />
         <activity
             android:name=".create_reservation"
-            android:label="@string/title_activity_create_reservation"></activity>
+            android:label="@string/title_activity_create_reservation" />
         <activity
             android:name=".create_reservation_time"
-            android:label="@string/title_activity_create_reservation_time"></activity>
+            android:label="@string/title_activity_create_reservation_time" />
         <activity
             android:name=".RegisteredVehicles"
             android:label="@string/title_activity_registered_vehicles"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".PriceEstimate"></activity>
     </application>
 
 </manifest>
